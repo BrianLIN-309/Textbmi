@@ -66,4 +66,13 @@
         android:text="BMI="
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btSubmit" />
+
+    <ImageView
+        android:id="@+id/ivShow"
+        android:layout_width="158dp"
+        android:layout_height="451dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@+id/tvShowBMI"
+        app:layout_constraintTop_toBottomOf="@+id/tvShowBMI"
+        app:srcCompat="@drawable/a1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
