@@ -2,4 +2,10 @@
     <string name="app_name">Textbmi</string>
     <string name="height">Height(cm)</string>
     <string name="weight">Weight(kg)</string>
+    <string-array name="color">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>White</item>
+    </string-array>
 </resources>
