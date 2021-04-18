@@ -97,4 +97,14 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toStartOf="@+id/btSubmit"
         app:layout_constraintTop_toTopOf="@+id/btSubmit" />
+
+    <Button
+        android:id="@+id/btResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="showResult"
+        android:text="第二頁"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
