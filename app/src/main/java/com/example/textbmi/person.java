@@ -4,6 +4,11 @@ public class person {
     double height;
     double weight;
 
+    public person(double height, double weight) {
+        this.height = height;
+        this.weight = weight;
+    }
+
     public double getHeight() {
         return height;
     }
