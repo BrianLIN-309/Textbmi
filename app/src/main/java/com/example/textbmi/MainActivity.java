@@ -118,6 +118,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void showResult(View view) {
         Intent intent = new Intent(this,ResultActivity.class);
+//        intent.putExtra("BMI",bmi_value());
+//        intent.putExtra("height",180);
+        Bundle bundle = new Bundle();
+        bundle.putString("BMI",bmi_value());
+        bundle.putInt("height",180);
+        intent.putExtras(bundle);
         startActivity(intent);
     }
 }

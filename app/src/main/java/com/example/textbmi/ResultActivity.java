@@ -3,6 +3,7 @@ package com.example.textbmi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -10,5 +11,13 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+
+//        String bmi = getIntent().getStringExtra("BMI");
+//        int height =getIntent().getIntExtra("height",0);
+        Bundle bundle =getIntent().getExtras();
+        String bmi = bundle.getString("BMI");
+        int height =bundle.getInt("height");
+        TextView showbmi = findViewById(R.id.tvShow);
+        showbmi.setText(String.valueOf(height));
     }
 }
