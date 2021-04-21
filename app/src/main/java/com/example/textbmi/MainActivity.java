@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
@@ -25,8 +26,39 @@ public class MainActivity extends AppCompatActivity {
     private boolean[] checked;
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("Start","===start");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("Stop","===stop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("Destroy","===destroy");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("Pause","===pause");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("Resume","===resume");
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("Create","===create");
         setContentView(R.layout.activity_main);
         height = findViewById(R.id.edHeight);
         weight = findViewById(R.id.edWeight);
